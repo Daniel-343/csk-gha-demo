@@ -31,6 +31,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push the image
         run: |
-          IMAGE=ghcr.io/Daniel-343/csk-gha-demo:$TAG
+          IMAGE=ghcr.io/daniel-343/csk-gha-demo:$TAG
           docker build -t $IMAGE .
           docker push $IMAGE
